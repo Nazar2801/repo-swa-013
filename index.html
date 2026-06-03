@@ -52,7 +52,7 @@
             const hasilDiv = document.getElementById('hasil');
 
             // GANTI URL DI BAWAH INI dengan URL Azure Function Anda (dari Praktikum 4)
-            const functionUrl = `https://func-serverless-013-c9esf0ezbbh9a6fa.southeastasia-01.azurewebsites.net/api/EstimasiBiaya`;
+            const functionUrl = `https://func-serverless-013-c9esf0ezbbh9a6fa.southeastasia-01.azurewebsites.net/api/EstimasiBiaya?jumlah=${jumlah}&jenis=${jenis}`;
 
             try {
                 const response = await fetch(functionUrl);
